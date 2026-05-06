@@ -6,8 +6,8 @@
 users = []
 5.times do |i|
   user = User.find_or_create_by!(email: "user#{i+1}@example.com") do |u|
-    u.first_name = ["Alice", "Bob", "Charlie", "Diana", "Eve"][i]
-    u.last_name = ["Smith", "Johnson", "Williams", "Brown", "Jones"][i]
+    u.first_name = [ "Alice", "Bob", "Charlie", "Diana", "Eve" ][i]
+    u.last_name = [ "Smith", "Johnson", "Williams", "Brown", "Jones" ][i]
     u.display_name = "#{u.first_name} #{u.last_name}"
   end
   users << user

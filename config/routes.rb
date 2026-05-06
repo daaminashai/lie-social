@@ -11,11 +11,11 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "pages#home"
-  
+
   # Resources
   resources :posts
   resources :users
-  
+
   # Pages
   get "home", to: "pages#home"
 end
